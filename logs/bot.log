@@ -15016,3 +15016,507 @@ LADA XRAY I VIN
 [parameters: ('17', 'фотографий Создано 4 минуты назад 429 187 км 2001 Бобруйск Citroen Xsara Picasso I', 2001, 'дизель', 'Unknown', 429187)]
 (Background on this error at: https://sqlalche.me/e/20/dbapi)
 2026-05-27 13:23:20.841 | INFO     | app.scheduler.worker:run_scheduler:79 - Sleeping for 45 seconds...
+2026-05-27 13:24:05.885 | INFO     | app.scheduler.worker:run_scheduler:68 - Running parser: av.by
+2026-05-27 13:25:06.304 | ERROR    | app.parsers.base:log_status:21 - [av.by] Attempt 1 failed: Timeout 60000ms exceeded.
+2026-05-27 13:26:13.111 | ERROR    | app.parsers.base:log_status:21 - [av.by] Attempt 2 failed: Timeout 60000ms exceeded.
+2026-05-27 13:26:32.070 | INFO     | app.parsers.base:log_status:23 - [av.by] Parsed 10 ads
+2026-05-27 13:26:32.079 | INFO     | app.services.publisher:publish_ad:52 - Attempting to publish ad av_131025211 to channel @BY_auto_10k
+2026-05-27 13:26:32.850 | INFO     | app.services.publisher:publish_ad:62 - Successfully published av_131025211 to channel (message_id=244).
+2026-05-27 13:26:37.863 | INFO     | app.services.publisher:publish_ad:52 - Attempting to publish ad av_130721903 to channel @BY_auto_10k
+2026-05-27 13:26:38.406 | INFO     | app.services.publisher:publish_ad:62 - Successfully published av_130721903 to channel (message_id=245).
+2026-05-27 13:26:43.420 | INFO     | app.services.publisher:publish_ad:52 - Attempting to publish ad av_132880598 to channel @BY_auto_10k
+2026-05-27 13:26:43.889 | INFO     | app.services.publisher:publish_ad:62 - Successfully published av_132880598 to channel (message_id=246).
+2026-05-27 13:26:48.905 | INFO     | app.services.publisher:publish_ad:52 - Attempting to publish ad av_128357811 to channel @BY_auto_10k
+2026-05-27 13:26:49.771 | INFO     | app.services.publisher:publish_ad:62 - Successfully published av_128357811 to channel (message_id=247).
+2026-05-27 13:26:54.785 | INFO     | app.services.publisher:publish_ad:52 - Attempting to publish ad av_125474738 to channel @BY_auto_10k
+2026-05-27 13:26:55.647 | INFO     | app.services.publisher:publish_ad:62 - Successfully published av_125474738 to channel (message_id=248).
+2026-05-27 13:27:05.659 | INFO     | app.scheduler.worker:run_scheduler:68 - Running parser: kufar.by
+2026-05-27 13:27:12.875 | DEBUG    | app.parsers.kufar_by:fetch_ads:24 - [kufar.by] Found 31 section elements
+2026-05-27 13:27:12.895 | DEBUG    | app.parsers.kufar_by:fetch_ads:30 - [kufar.by] Section 0: skipped, no valid url (url=/l/cars/audi)
+2026-05-27 13:27:13.032 | DEBUG    | app.parsers.kufar_by:fetch_ads:77 - [kufar.by] Section 1: parsed LADA (ВАЗ) 2106 2106 0 3 BYN
+2026-05-27 13:27:13.065 | DEBUG    | app.parsers.kufar_by:fetch_ads:44 - [kufar.by] Section 2: no BYN price found in text: Mercedes-Benz E-Класс II (W210, S210)
+Бесплатно
+Витебск
+
+1998 г.
+
+Автоматическая, 2.2 л, дизель, универсал
+
+250 000 км
+
+Сегодня, 11:45
+2026-05-27 13:27:13.099 | DEBUG    | app.parsers.kufar_by:fetch_ads:44 - [kufar.by] Section 3: no BYN price found in text: SEAT Toledo I
+Бесплатно
+Чаусы, Могилевская обл.
+
+1994 г.
+
+Механика, 1.6 л, бензин, хэтчбек
+
+56 662 км
+
+Сегодня, 08:19
+2026-05-27 13:27:13.234 | DEBUG    | app.parsers.kufar_by:fetch_ads:77 - [kufar.by] Section 4: parsed Ford Fiesta Mk4 0 3 BYN
+2026-05-27 13:27:13.370 | DEBUG    | app.parsers.kufar_by:fetch_ads:77 - [kufar.by] Section 5: parsed Hyundai Tiburon I (RD) Рестайлинг 0 77 BYN
+2026-05-27 13:27:13.399 | DEBUG    | app.parsers.kufar_by:fetch_ads:44 - [kufar.by] Section 6: no BYN price found in text: Москвич 2140 2140
+Бесплатно
+Любань, Минская обл.
+
+1980 или ранее г.
+
+Механика, 1.9 л, бензин, седан
+
+1 км
+
+Сегодня, 07:24
+2026-05-27 13:27:13.511 | DEBUG    | app.parsers.kufar_by:fetch_ads:77 - [kufar.by] Section 7: parsed Renault Megane I 0 3 BYN
+2026-05-27 13:27:13.642 | DEBUG    | app.parsers.kufar_by:fetch_ads:77 - [kufar.by] Section 8: parsed LADA (ВАЗ) 1111 Ока 1111 Ока 0 3 BYN
+2026-05-27 13:27:13.675 | DEBUG    | app.parsers.kufar_by:fetch_ads:44 - [kufar.by] Section 9: no BYN price found in text: Citroen Xantia I Рестайлинг
+Бесплатно
+Гомель
+
+1998 г.
+
+Механика, 1.8 л, бензин, хэтчбек
+
+250 000 км
+
+Вчера, 16:58
+2026-05-27 13:27:13.732 | INFO     | app.parsers.base:log_status:23 - [kufar.by] Parsed 5 ads
+2026-05-27 13:27:18.742 | INFO     | app.scheduler.worker:run_scheduler:68 - Running parser: onliner.by
+2026-05-27 13:27:27.036 | DEBUG    | app.parsers.onliner_by:fetch_ads:26 - [onliner.by] Total offers found: 50
+2026-05-27 13:27:27.073 | DEBUG    | app.parsers.onliner_by:fetch_ads:39 - [onliner.by] Offer 0 full text: 20 фотографий
+Вчера в 23:58
+159 000 км
+ 
+2017
+Минск
+LADA Vesta (I) VIN
+23 271 ƃ
+8400 $ / 7215 €
+1.8 л / Бензин
+Автоматическая
+Седан
+ 
+122 л.с. / 170 Нм
+Передний
+Еще 39 опций
+2026-05-27 13:27:27.073 | DEBUG    | app.parsers.onliner_by:fetch_ads:72 - [onliner.by] Offer 0 brand: 'LADA', model: 'Vesta (I)'
+2026-05-27 13:27:27.091 | DEBUG    | app.parsers.onliner_by:fetch_ads:132 - [onliner.by] Parsed: LADA Vesta (I) 2017 $7757 Минск mileage=58159000km
+2026-05-27 13:27:27.125 | DEBUG    | app.parsers.onliner_by:fetch_ads:39 - [onliner.by] Offer 1 full text: 13 фотографий
+9 минут назад
+195 000 км
+ 
+2016
+Минск
+Ford Focus (III) Рестайлинг VIN
+25 764 ƃ
+9300 $ / 7988 €
+1.6 л / Бензин
+Механическая
+Хетчбэк
+ 
+105 л.с.
+Передний
+Еще 30 опций
+Один владелецВозможен торг
+2026-05-27 13:27:27.125 | DEBUG    | app.parsers.onliner_by:fetch_ads:72 - [onliner.by] Offer 1 brand: 'Ford', model: 'Focus (III) Рестайлинг'
+2026-05-27 13:27:27.142 | DEBUG    | app.parsers.onliner_by:fetch_ads:132 - [onliner.by] Parsed: Ford Focus (III) Рестайлинг 2016 $8588 Минск mileage=195000km
+2026-05-27 13:27:27.177 | DEBUG    | app.parsers.onliner_by:fetch_ads:39 - [onliner.by] Offer 2 full text: 7 фотографий
+1 час назад
+399 133 км
+ 
+2015
+Молодечно
+Volkswagen Polo (V) Рестайлинг VIN
+18 256 ƃ
+6590 $ / 5661 €
+1.6 л / Бензин
+Механическая
+Седан
+ 
+110 л.с.
+Передний
+Еще 8 опций
+Один владелецВозможен торг
+2026-05-27 13:27:27.177 | DEBUG    | app.parsers.onliner_by:fetch_ads:72 - [onliner.by] Offer 2 brand: 'Volkswagen', model: 'Polo (V) Рестайлинг'
+2026-05-27 13:27:27.196 | DEBUG    | app.parsers.onliner_by:fetch_ads:132 - [onliner.by] Parsed: Volkswagen Polo (V) Рестайлинг 2015 $6085 Молодечно mileage=399133km
+2026-05-27 13:27:27.234 | DEBUG    | app.parsers.onliner_by:fetch_ads:39 - [onliner.by] Offer 3 full text: 14 фотографий
+Создано 1 минуту назад
+351 866 км
+ 
+2010
+Лида
+Citroen C5 II VIN
+16 899 ƃ
+6100 $ / 5240 €
+1.6 л / Дизель
+Механическая
+Седан
+ 
+Передний
+Еще 7 опций
+2026-05-27 13:27:27.235 | DEBUG    | app.parsers.onliner_by:fetch_ads:72 - [onliner.by] Offer 3 brand: 'Citroen', model: 'C5 II'
+2026-05-27 13:27:27.254 | DEBUG    | app.parsers.onliner_by:fetch_ads:132 - [onliner.by] Parsed: Citroen C5 II 2010 $5633 Лида mileage=351866km
+2026-05-27 13:27:27.292 | DEBUG    | app.parsers.onliner_by:fetch_ads:39 - [onliner.by] Offer 4 full text: 13 фотографий
+4 минуты назад
+369 000 км
+ 
+2006
+Минск
+Audi A4 (B7) S-line VIN
+24 656 ƃ
+8900 $ / 7645 €
+2 л / Бензин
+Автоматическая
+Седан
+ 
+220 л.с.
+Передний
+Еще 35 опций
+2026-05-27 13:27:27.292 | DEBUG    | app.parsers.onliner_by:fetch_ads:72 - [onliner.by] Offer 4 brand: 'Audi', model: 'A4 (B7) S-line'
+2026-05-27 13:27:27.311 | DEBUG    | app.parsers.onliner_by:fetch_ads:132 - [onliner.by] Parsed: Audi A4 (B7) S-line 2006 $8218 Минск mileage=369000km
+2026-05-27 13:27:27.348 | DEBUG    | app.parsers.onliner_by:fetch_ads:39 - [onliner.by] Offer 5 full text: 14 фотографий
+6 минут назад
+244 000 км
+ 
+1997
+Минск
+Renault Laguna (I) VIN
+4987 ƃ
+1800 $ / 1546 €
+2.2 л / Дизель
+Механическая
+Универсал
+ 
+Передний
+Еще 5 опций
+2026-05-27 13:27:27.348 | DEBUG    | app.parsers.onliner_by:fetch_ads:72 - [onliner.by] Offer 5 brand: 'Renault', model: 'Laguna (I)'
+2026-05-27 13:27:27.367 | DEBUG    | app.parsers.onliner_by:fetch_ads:132 - [onliner.by] Parsed: Renault Laguna (I) 0 $1662 Минск mileage=244000km
+2026-05-27 13:27:27.403 | DEBUG    | app.parsers.onliner_by:fetch_ads:39 - [onliner.by] Offer 6 full text: 17 фотографий
+Создано 8 минут назад
+429 187 км
+ 
+2001
+Бобруйск
+Citroen Xsara Picasso I VIN
+10 112 ƃ
+3650 $ / 3135 €
+2 л / Дизель
+Механическая
+Минивэн
+ 
+Передний
+Еще 6 опций
+2026-05-27 13:27:27.404 | DEBUG    | app.parsers.onliner_by:fetch_ads:72 - [onliner.by] Offer 6 brand: '17', model: 'фотографий Создано 8 минут назад 429 187 км 2001 Бобруйск Citroen Xsara Picasso I'
+2026-05-27 13:27:27.422 | DEBUG    | app.parsers.onliner_by:fetch_ads:132 - [onliner.by] Parsed: 17 фотографий Создано 8 минут назад 429 187 км 2001 Бобруйск Citroen Xsara Picasso I 2001 $3370 Unknown mileage=429187km
+2026-05-27 13:27:27.461 | DEBUG    | app.parsers.onliner_by:fetch_ads:39 - [onliner.by] Offer 7 full text: 12 фотографий
+Создано 11 минут назад
+211 562 км
+ 
+1997
+Минск
+Peugeot 406 (I) VIN Обмен
+8172 ƃ
+2950 $ / 2534 €
+1.6 л / Бензин
+Механическая
+Седан
+ 
+88 л.с.
+Передний
+Еще 21 опция
+2026-05-27 13:27:27.462 | DEBUG    | app.parsers.onliner_by:fetch_ads:72 - [onliner.by] Offer 7 brand: 'Peugeot', model: '406 (I)'
+2026-05-27 13:27:27.480 | DEBUG    | app.parsers.onliner_by:fetch_ads:132 - [onliner.by] Parsed: Peugeot 406 (I) 0 $2724 Минск mileage=211562km
+2026-05-27 13:27:27.516 | DEBUG    | app.parsers.onliner_by:fetch_ads:39 - [onliner.by] Offer 8 full text: 9 фотографий
+Создано 14 минут назад
+385 000 км
+ 
+1997
+Минск
+Audi A4 (B5) VIN
+8588 ƃ
+3100 $ / 2663 €
+1.6 л / Бензин
+Механическая
+Седан
+ 
+Передний
+Еще 2 опции
+2026-05-27 13:27:27.516 | DEBUG    | app.parsers.onliner_by:fetch_ads:72 - [onliner.by] Offer 8 brand: 'Audi', model: 'A4 (B5)'
+2026-05-27 13:27:27.534 | DEBUG    | app.parsers.onliner_by:fetch_ads:132 - [onliner.by] Parsed: Audi A4 (B5) 0 $2862 Минск mileage=385000km
+2026-05-27 13:27:27.569 | DEBUG    | app.parsers.onliner_by:fetch_ads:39 - [onliner.by] Offer 9 full text: 9 фотографий
+Создано 15 минут назад
+400 000 км
+ 
+2011
+Минск
+Opel Astra J VIN
+16 622 ƃ
+6000 $ / 5154 €
+1.3 л / Дизель
+Механическая
+Универсал
+ 
+Передний
+Еще 17 опций
+2026-05-27 13:27:27.570 | DEBUG    | app.parsers.onliner_by:fetch_ads:72 - [onliner.by] Offer 9 brand: 'Opel', model: 'Astra J'
+2026-05-27 13:27:27.586 | DEBUG    | app.parsers.onliner_by:fetch_ads:132 - [onliner.by] Parsed: Opel Astra J 2011 $5540 Минск mileage=400000km
+2026-05-27 13:27:27.642 | INFO     | app.parsers.base:log_status:23 - [onliner.by] Parsed 10 ads
+2026-05-27 13:27:27.652 | INFO     | app.services.publisher:publish_ad:52 - Attempting to publish ad onliner_5057618 to channel @BY_auto_10k
+2026-05-27 13:27:28.626 | INFO     | app.services.publisher:publish_ad:62 - Successfully published onliner_5057618 to channel (message_id=249).
+2026-05-27 13:27:33.640 | INFO     | app.services.publisher:publish_ad:52 - Attempting to publish ad onliner_5053062 to channel @BY_auto_10k
+2026-05-27 13:27:34.404 | INFO     | app.services.publisher:publish_ad:62 - Successfully published onliner_5053062 to channel (message_id=250).
+2026-05-27 13:27:39.415 | ERROR    | app.scheduler.worker:run_scheduler:74 - Error in scheduler for onliner.by: (sqlalchemy.dialects.postgresql.asyncpg.Error) <class 'asyncpg.exceptions.StringDataRightTruncationError'>: value too long for type character varying(50)
+[SQL: INSERT INTO cars (brand, model, year, engine, gearbox, mileage) VALUES ($1::VARCHAR, $2::VARCHAR, $3::INTEGER, $4::VARCHAR, $5::VARCHAR, $6::INTEGER) RETURNING cars.id]
+[parameters: ('17', 'фотографий Создано 8 минут назад 429 187 км 2001 Бобруйск Citroen Xsara Picasso I', 2001, 'дизель', 'Unknown', 429187)]
+(Background on this error at: https://sqlalche.me/e/20/dbapi)
+2026-05-27 13:27:44.417 | INFO     | app.scheduler.worker:run_scheduler:79 - Sleeping for 45 seconds...
+2026-05-27 13:28:29.431 | INFO     | app.scheduler.worker:run_scheduler:68 - Running parser: av.by
+2026-05-27 13:28:37.914 | INFO     | app.parsers.base:log_status:23 - [av.by] Parsed 10 ads
+2026-05-27 13:28:37.922 | INFO     | app.services.publisher:publish_ad:52 - Attempting to publish ad av_126787026 to channel @BY_auto_10k
+2026-05-27 13:28:38.169 | INFO     | app.services.publisher:publish_ad:62 - Successfully published av_126787026 to channel (message_id=251).
+2026-05-27 13:28:43.185 | INFO     | app.services.publisher:publish_ad:52 - Attempting to publish ad av_125353575 to channel @BY_auto_10k
+2026-05-27 13:28:43.306 | INFO     | app.services.publisher:publish_ad:62 - Successfully published av_125353575 to channel (message_id=252).
+2026-05-27 13:28:48.321 | INFO     | app.services.publisher:publish_ad:52 - Attempting to publish ad av_129731984 to channel @BY_auto_10k
+2026-05-27 13:28:48.774 | INFO     | app.services.publisher:publish_ad:62 - Successfully published av_129731984 to channel (message_id=253).
+2026-05-27 13:28:53.788 | INFO     | app.services.publisher:publish_ad:52 - Attempting to publish ad av_129731913 to channel @BY_auto_10k
+2026-05-27 13:28:54.494 | INFO     | app.services.publisher:publish_ad:62 - Successfully published av_129731913 to channel (message_id=254).
+2026-05-27 13:28:59.507 | INFO     | app.services.publisher:publish_ad:52 - Attempting to publish ad av_131554216 to channel @BY_auto_10k
+2026-05-27 13:29:00.238 | INFO     | app.services.publisher:publish_ad:62 - Successfully published av_131554216 to channel (message_id=255).
+2026-05-27 13:29:05.252 | INFO     | app.services.publisher:publish_ad:52 - Attempting to publish ad av_130052772 to channel @BY_auto_10k
+2026-05-27 13:29:06.284 | INFO     | app.services.publisher:publish_ad:62 - Successfully published av_130052772 to channel (message_id=256).
+2026-05-27 13:29:11.295 | INFO     | app.services.publisher:publish_ad:52 - Attempting to publish ad av_132573313 to channel @BY_auto_10k
+2026-05-27 13:29:11.799 | INFO     | app.services.publisher:publish_ad:62 - Successfully published av_132573313 to channel (message_id=257).
+2026-05-27 13:29:16.812 | INFO     | app.services.publisher:publish_ad:52 - Attempting to publish ad av_124946284 to channel @BY_auto_10k
+2026-05-27 13:29:17.366 | INFO     | app.services.publisher:publish_ad:62 - Successfully published av_124946284 to channel (message_id=258).
+2026-05-27 13:29:22.380 | INFO     | app.services.publisher:publish_ad:52 - Attempting to publish ad av_132880622 to channel @BY_auto_10k
+2026-05-27 13:29:22.914 | INFO     | app.services.publisher:publish_ad:62 - Successfully published av_132880622 to channel (message_id=259).
+2026-05-27 13:29:32.925 | INFO     | app.scheduler.worker:run_scheduler:68 - Running parser: kufar.by
+2026-05-27 13:29:39.612 | DEBUG    | app.parsers.kufar_by:fetch_ads:24 - [kufar.by] Found 31 section elements
+2026-05-27 13:29:39.633 | DEBUG    | app.parsers.kufar_by:fetch_ads:30 - [kufar.by] Section 0: skipped, no valid url (url=/l/cars/audi)
+2026-05-27 13:29:39.767 | DEBUG    | app.parsers.kufar_by:fetch_ads:77 - [kufar.by] Section 1: parsed LADA (ВАЗ) 2106 2106 0 3 BYN
+2026-05-27 13:29:39.800 | DEBUG    | app.parsers.kufar_by:fetch_ads:44 - [kufar.by] Section 2: no BYN price found in text: Mercedes-Benz E-Класс II (W210, S210)
+Бесплатно
+Витебск
+
+1998 г.
+
+Автоматическая, 2.2 л, дизель, универсал
+
+250 000 км
+
+Сегодня, 11:45
+2026-05-27 13:29:39.829 | DEBUG    | app.parsers.kufar_by:fetch_ads:44 - [kufar.by] Section 3: no BYN price found in text: SEAT Toledo I
+Бесплатно
+Чаусы, Могилевская обл.
+
+1994 г.
+
+Механика, 1.6 л, бензин, хэтчбек
+
+56 662 км
+
+Сегодня, 08:19
+2026-05-27 13:29:39.943 | DEBUG    | app.parsers.kufar_by:fetch_ads:77 - [kufar.by] Section 4: parsed Ford Fiesta Mk4 0 3 BYN
+2026-05-27 13:29:40.067 | DEBUG    | app.parsers.kufar_by:fetch_ads:77 - [kufar.by] Section 5: parsed Hyundai Tiburon I (RD) Рестайлинг 0 77 BYN
+2026-05-27 13:29:40.102 | DEBUG    | app.parsers.kufar_by:fetch_ads:44 - [kufar.by] Section 6: no BYN price found in text: Москвич 2140 2140
+Бесплатно
+Любань, Минская обл.
+
+1980 или ранее г.
+
+Механика, 1.9 л, бензин, седан
+
+1 км
+
+Сегодня, 07:24
+2026-05-27 13:29:40.232 | DEBUG    | app.parsers.kufar_by:fetch_ads:77 - [kufar.by] Section 7: parsed Renault Megane I 0 3 BYN
+2026-05-27 13:29:40.364 | DEBUG    | app.parsers.kufar_by:fetch_ads:77 - [kufar.by] Section 8: parsed LADA (ВАЗ) 1111 Ока 1111 Ока 0 3 BYN
+2026-05-27 13:29:40.397 | DEBUG    | app.parsers.kufar_by:fetch_ads:44 - [kufar.by] Section 9: no BYN price found in text: Citroen Xantia I Рестайлинг
+Бесплатно
+Гомель
+
+1998 г.
+
+Механика, 1.8 л, бензин, хэтчбек
+
+250 000 км
+
+Вчера, 16:58
+2026-05-27 13:29:40.443 | INFO     | app.parsers.base:log_status:23 - [kufar.by] Parsed 5 ads
+2026-05-27 13:29:45.453 | INFO     | app.scheduler.worker:run_scheduler:68 - Running parser: onliner.by
+2026-05-27 13:29:53.456 | DEBUG    | app.parsers.onliner_by:fetch_ads:26 - [onliner.by] Total offers found: 50
+2026-05-27 13:29:53.494 | DEBUG    | app.parsers.onliner_by:fetch_ads:39 - [onliner.by] Offer 0 full text: 20 фотографий
+Вчера в 23:58
+159 000 км
+2017
+Минск
+LADA Vesta (I) VIN
+23 271 ƃ
+8400 $ / 7215 €
+1.8 л / Бензин
+Автоматическая
+Седан
+ 
+122 л.с. / 170 Нм
+Передний
+Еще 39 опций
+2026-05-27 13:29:53.494 | DEBUG    | app.parsers.onliner_by:fetch_ads:72 - [onliner.by] Offer 0 brand: 'LADA', model: 'Vesta (I)'
+2026-05-27 13:29:53.511 | DEBUG    | app.parsers.onliner_by:fetch_ads:132 - [onliner.by] Parsed: LADA Vesta (I) 2017 $7757 Минск mileage=58159000km
+2026-05-27 13:29:53.545 | DEBUG    | app.parsers.onliner_by:fetch_ads:39 - [onliner.by] Offer 1 full text: 13 фотографий
+11 минут назад
+195 000 км
+2016
+Минск
+Ford Focus (III) Рестайлинг VIN
+25 764 ƃ
+9300 $ / 7988 €
+1.6 л / Бензин
+Механическая
+Хетчбэк
+ 
+105 л.с.
+Передний
+Еще 30 опций
+Один владелецВозможен торг
+2026-05-27 13:29:53.546 | DEBUG    | app.parsers.onliner_by:fetch_ads:72 - [onliner.by] Offer 1 brand: 'Ford', model: 'Focus (III) Рестайлинг'
+2026-05-27 13:29:53.564 | DEBUG    | app.parsers.onliner_by:fetch_ads:132 - [onliner.by] Parsed: Ford Focus (III) Рестайлинг 2016 $8588 Минск mileage=195000km
+2026-05-27 13:29:53.599 | DEBUG    | app.parsers.onliner_by:fetch_ads:39 - [onliner.by] Offer 2 full text: 7 фотографий
+1 час назад
+399 133 км
+2015
+Молодечно
+Volkswagen Polo (V) Рестайлинг VIN
+18 256 ƃ
+6590 $ / 5661 €
+1.6 л / Бензин
+Механическая
+Седан
+ 
+110 л.с.
+Передний
+Еще 8 опций
+Один владелецВозможен торг
+2026-05-27 13:29:53.599 | DEBUG    | app.parsers.onliner_by:fetch_ads:72 - [onliner.by] Offer 2 brand: 'Volkswagen', model: 'Polo (V) Рестайлинг'
+2026-05-27 13:29:53.617 | DEBUG    | app.parsers.onliner_by:fetch_ads:132 - [onliner.by] Parsed: Volkswagen Polo (V) Рестайлинг 2015 $6085 Молодечно mileage=399133km
+2026-05-27 13:29:53.650 | DEBUG    | app.parsers.onliner_by:fetch_ads:39 - [onliner.by] Offer 3 full text: 14 фотографий
+Создано 3 минуты назад
+351 866 км
+2010
+Лида
+Citroen C5 II VIN
+16 899 ƃ
+6100 $ / 5240 €
+1.6 л / Дизель
+Механическая
+Седан
+ 
+Передний
+Еще 7 опций
+2026-05-27 13:29:53.651 | DEBUG    | app.parsers.onliner_by:fetch_ads:72 - [onliner.by] Offer 3 brand: 'Citroen', model: 'C5 II'
+2026-05-27 13:29:53.670 | DEBUG    | app.parsers.onliner_by:fetch_ads:132 - [onliner.by] Parsed: Citroen C5 II 2010 $5633 Лида mileage=351866km
+2026-05-27 13:29:53.704 | DEBUG    | app.parsers.onliner_by:fetch_ads:39 - [onliner.by] Offer 4 full text: 13 фотографий
+6 минут назад
+369 000 км
+2006
+Минск
+Audi A4 (B7) S-line VIN
+24 656 ƃ
+8900 $ / 7645 €
+2 л / Бензин
+Автоматическая
+Седан
+ 
+220 л.с.
+Передний
+Еще 35 опций
+2026-05-27 13:29:53.704 | DEBUG    | app.parsers.onliner_by:fetch_ads:72 - [onliner.by] Offer 4 brand: 'Audi', model: 'A4 (B7) S-line'
+2026-05-27 13:29:53.723 | DEBUG    | app.parsers.onliner_by:fetch_ads:132 - [onliner.by] Parsed: Audi A4 (B7) S-line 2006 $8218 Минск mileage=369000km
+2026-05-27 13:29:53.756 | DEBUG    | app.parsers.onliner_by:fetch_ads:39 - [onliner.by] Offer 5 full text: 14 фотографий
+8 минут назад
+244 000 км
+1997
+Минск
+Renault Laguna (I) VIN
+4987 ƃ
+1800 $ / 1546 €
+2.2 л / Дизель
+Механическая
+Универсал
+ 
+Передний
+Еще 5 опций
+2026-05-27 13:29:53.756 | DEBUG    | app.parsers.onliner_by:fetch_ads:72 - [onliner.by] Offer 5 brand: 'Renault', model: 'Laguna (I)'
+2026-05-27 13:29:53.773 | DEBUG    | app.parsers.onliner_by:fetch_ads:132 - [onliner.by] Parsed: Renault Laguna (I) 0 $1662 Минск mileage=244000km
+2026-05-27 13:29:53.807 | DEBUG    | app.parsers.onliner_by:fetch_ads:39 - [onliner.by] Offer 6 full text: 17 фотографий
+Создано 10 минут назад
+429 187 км
+2001
+Бобруйск
+Citroen Xsara Picasso I VIN
+10 112 ƃ
+3650 $ / 3135 €
+2 л / Дизель
+Механическая
+Минивэн
+ 
+Передний
+Еще 6 опций
+2026-05-27 13:29:53.807 | DEBUG    | app.parsers.onliner_by:fetch_ads:72 - [onliner.by] Offer 6 brand: '17', model: 'фотографий Создано 10 минут назад 429 187 км 2001 Бобруйск Citroen Xsara Picasso I'
+2026-05-27 13:29:53.824 | DEBUG    | app.parsers.onliner_by:fetch_ads:132 - [onliner.by] Parsed: 17 фотографий Создано 10 минут назад 429 187 км 2001 Бобруйск Citroen Xsara Picasso I 2001 $3370 Unknown mileage=429187km
+2026-05-27 13:29:53.858 | DEBUG    | app.parsers.onliner_by:fetch_ads:39 - [onliner.by] Offer 7 full text: 12 фотографий
+Создано 13 минут назад
+211 562 км
+1997
+Минск
+Peugeot 406 (I) VIN Обмен
+8172 ƃ
+2950 $ / 2534 €
+1.6 л / Бензин
+Механическая
+Седан
+ 
+88 л.с.
+Передний
+Еще 21 опция
+2026-05-27 13:29:53.858 | DEBUG    | app.parsers.onliner_by:fetch_ads:72 - [onliner.by] Offer 7 brand: 'Peugeot', model: '406 (I)'
+2026-05-27 13:29:53.877 | DEBUG    | app.parsers.onliner_by:fetch_ads:132 - [onliner.by] Parsed: Peugeot 406 (I) 0 $2724 Минск mileage=211562km
+2026-05-27 13:29:53.911 | DEBUG    | app.parsers.onliner_by:fetch_ads:39 - [onliner.by] Offer 8 full text: 9 фотографий
+Создано 17 минут назад
+385 000 км
+1997
+Минск
+Audi A4 (B5) VIN
+8588 ƃ
+3100 $ / 2663 €
+1.6 л / Бензин
+Механическая
+Седан
+ 
+Передний
+Еще 2 опции
+2026-05-27 13:29:53.911 | DEBUG    | app.parsers.onliner_by:fetch_ads:72 - [onliner.by] Offer 8 brand: 'Audi', model: 'A4 (B5)'
+2026-05-27 13:29:53.928 | DEBUG    | app.parsers.onliner_by:fetch_ads:132 - [onliner.by] Parsed: Audi A4 (B5) 0 $2862 Минск mileage=385000km
+2026-05-27 13:29:53.962 | DEBUG    | app.parsers.onliner_by:fetch_ads:39 - [onliner.by] Offer 9 full text: 9 фотографий
+Создано 17 минут назад
+400 000 км
+2011
+Минск
+Opel Astra J VIN
+16 622 ƃ
+6000 $ / 5154 €
+1.3 л / Дизель
+Механическая
+Универсал
+ 
+Передний
+Еще 17 опций
+2026-05-27 13:29:53.963 | DEBUG    | app.parsers.onliner_by:fetch_ads:72 - [onliner.by] Offer 9 brand: 'Opel', model: 'Astra J'
+2026-05-27 13:29:53.980 | DEBUG    | app.parsers.onliner_by:fetch_ads:132 - [onliner.by] Parsed: Opel Astra J 2011 $5540 Минск mileage=400000km
+2026-05-27 13:29:54.041 | INFO     | app.parsers.base:log_status:23 - [onliner.by] Parsed 10 ads
+2026-05-27 13:29:54.048 | ERROR    | app.scheduler.worker:run_scheduler:74 - Error in scheduler for onliner.by: (sqlalchemy.dialects.postgresql.asyncpg.Error) <class 'asyncpg.exceptions.StringDataRightTruncationError'>: value too long for type character varying(50)
+[SQL: INSERT INTO cars (brand, model, year, engine, gearbox, mileage) VALUES ($1::VARCHAR, $2::VARCHAR, $3::INTEGER, $4::VARCHAR, $5::VARCHAR, $6::INTEGER) RETURNING cars.id]
+[parameters: ('17', 'фотографий Создано 10 минут назад 429 187 км 2001 Бобруйск Citroen Xsara Picasso I', 2001, 'дизель', 'Unknown', 429187)]
+(Background on this error at: https://sqlalche.me/e/20/dbapi)
+2026-05-27 13:29:59.054 | INFO     | app.scheduler.worker:run_scheduler:79 - Sleeping for 45 seconds...
