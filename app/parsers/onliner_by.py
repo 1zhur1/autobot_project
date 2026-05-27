@@ -71,9 +71,9 @@ class OnlinerByParser(BaseParser):
                             model = "Unknown"
                     logger.debug(f"[onliner.by] Offer {idx} brand: '{brand}', model: '{model}'")
 
-                    # Цена в USD — ищем "$" в тексте (после ƃ)
+                    # Цена в USD — ищем "$" в тексте (первое вхождение)
                     # Формат: "23 271 ƃ 8400 $ / 7215 €" или "8400 $"
-                    usd_match = re.search(r'(\d[\d\s]*)\s*\$$', full_text)
+                    usd_match = re.search(r'(\d[\d\s]*)\s*\$', full_text)
                     if usd_match:
                         price_str = usd_match.group(1).strip()
                         price = int(''.join(filter(str.isdigit, price_str)))
