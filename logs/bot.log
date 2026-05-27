@@ -15520,3 +15520,14 @@ Opel Astra J VIN
 [parameters: ('17', 'фотографий Создано 10 минут назад 429 187 км 2001 Бобруйск Citroen Xsara Picasso I', 2001, 'дизель', 'Unknown', 429187)]
 (Background on this error at: https://sqlalche.me/e/20/dbapi)
 2026-05-27 13:29:59.054 | INFO     | app.scheduler.worker:run_scheduler:79 - Sleeping for 45 seconds...
+2026-05-27 14:06:18.892 | INFO     | __main__:main:8 - Initializing database...
+2026-05-27 14:06:18.958 | INFO     | __main__:main:11 - Bot starting up...
+2026-05-27 14:06:18.958 | INFO     | app.scheduler.worker:run_scheduler:65 - Starting scheduler background worker...
+2026-05-27 14:06:18.959 | INFO     | app.scheduler.worker:run_scheduler:68 - Running parser: av.by
+2026-05-27 14:06:27.450 | INFO     | app.parsers.base:log_status:23 - [av.by] Parsed 10 ads
+2026-05-27 14:06:27.479 | INFO     | app.services.publisher:publish_ad:52 - Attempting to publish ad av_132880757 to channel @BY_auto_10k
+2026-05-27 14:06:28.215 | INFO     | app.services.publisher:publish_ad:62 - Successfully published av_132880757 to channel (message_id=270).
+2026-05-27 14:06:33.229 | INFO     | app.services.publisher:publish_ad:52 - Attempting to publish ad av_131005753 to channel @BY_auto_10k
+2026-05-27 14:06:33.740 | INFO     | app.services.publisher:publish_ad:62 - Successfully published av_131005753 to channel (message_id=271).
+2026-05-27 14:06:38.755 | INFO     | app.services.publisher:publish_ad:52 - Attempting to publish ad av_130600949 to channel @BY_auto_10k
+2026-05-27 14:06:39.144 | INFO     | app.services.publisher:publish_ad:62 - Successfully published av_130600949 to channel (message_id=272).
