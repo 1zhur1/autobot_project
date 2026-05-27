@@ -10,16 +10,16 @@ class AvByParser(BaseParser):
     async def fetch_ads(self):
         ads = []
         async with async_playwright() as p:
-            browser = await p.chromium.launch(headless=True, args=['--disable-blink-features=AutomationControlled'])
+            browser = await self._launch_browser(p)
             page = await self.setup_page(browser)
 
-            page.set_default_timeout(60000)
+            page.set_default_timeout(90000)
 
-            await page.goto(self.base_url, wait_until="networkidle", timeout=60000)
+            await page.goto(self.base_url, wait_until="domcontentloaded", timeout=90000)
             await self.random_delay(3, 5)
 
             # Ждём появления элементов списка
-            await page.wait_for_selector(".listing-item", timeout=60000)
+            await page.wait_for_selector(".listing-item", timeout=90000)
 
             listings = await page.locator(".listing-item").all()
             for listing in listings[:10]:

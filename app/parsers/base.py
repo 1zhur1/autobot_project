@@ -25,6 +25,19 @@ class BaseParser:
     async def random_delay(self, min_sec: float = 1.0, max_sec: float = 3.0):
         await asyncio.sleep(random.uniform(min_sec, max_sec))
 
+    async def _launch_browser(self, p):
+        """Launch headless Chromium with container-friendly settings."""
+        return await p.chromium.launch(
+            headless=True,
+            args=[
+                '--no-sandbox',
+                '--disable-setuid-sandbox',
+                '--disable-blink-features=AutomationControlled',
+                '--disable-dev-shm-usage',
+                '--disable-gpu',
+            ]
+        )
+
     async def setup_page(self, browser: Browser) -> Page:
         context = await browser.new_context(
             user_agent=self.ua.random,

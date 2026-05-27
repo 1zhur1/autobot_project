@@ -14,7 +14,7 @@ class KufarByParser(BaseParser):
     async def fetch_ads(self):
         ads = []
         async with async_playwright() as p:
-            browser = await p.chromium.launch(headless=True, args=['--disable-blink-features=AutomationControlled'])
+            browser = await self._launch_browser(p)
             page = await self.setup_page(browser)
             
             await page.goto(self.base_url, wait_until="domcontentloaded")
